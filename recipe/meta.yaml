@@ -1,4 +1,4 @@
-{% set version = "1.0.1.dev0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: esda
@@ -6,21 +6,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/esda/esda-{{ version }}.tar.gz
-  sha256: a3619f39703bf0541e290824a692d4dea5a6d4af02f98ae1e11b7dccc6075941
+  sha256: d074e303c8124bbd9c5a086bf95c2995c8ebc937ac678fcde0f4e3abe4092f05
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python >3.4
     - pip
   run:
+    - python >3.4
     - libpysal
     - numpy
-    - python
     - scipy
 
 test:
