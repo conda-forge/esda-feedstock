@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: esda
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/esda/esda-{{ version }}.tar.gz
-  sha256: d074e303c8124bbd9c5a086bf95c2995c8ebc937ac678fcde0f4e3abe4092f05
+  sha256: f5e7299c061fba430cb716039b5319a30b45edb34c426482bfec6648323d8570
 
 build:
   number: 0
