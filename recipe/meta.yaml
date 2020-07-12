@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -20,19 +20,23 @@ requirements:
   run:
     - python >3.4
     - libpysal
-    - numpy
-    - scipy >=0.11
+    - pandas
     - scikit-learn
+    - scipy >=0.11
 
 test:
   imports:
     - esda
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/pysal/esda
   license: BSD-3-Clause
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
-  summary: Package with statistics for exploratory spatial data analysis
+  license_file: LICENSE
+  summary: Exploratory Spatial Data Analysis
 
 extra:
   recipe-maintainers:
