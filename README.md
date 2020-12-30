@@ -5,11 +5,9 @@ Home: https://github.com/pysal/esda
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/esda-feedstock/blob/master/LICENSE.txt)
 
-Summary: Package with statistics for exploratory spatial data analysis
-
-
+Summary: Exploratory Spatial Data Analysis
 
 Current build status
 ====================
