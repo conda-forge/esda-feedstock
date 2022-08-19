@@ -23,6 +23,7 @@ requirements:
     - pandas
     - scikit-learn
     - scipy >=0.11
+    - matplotlib-base
 
 test:
   imports:
