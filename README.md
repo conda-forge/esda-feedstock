@@ -1,11 +1,11 @@
-About esda
-==========
+About esda-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/esda-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pysal/esda
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/esda-feedstock/blob/main/LICENSE.txt)
 
 Summary: Exploratory Spatial Data Analysis
 
