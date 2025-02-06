@@ -1,5 +1,5 @@
-{% set python_min = '3.10' %}
-{% set version = "2.6.0" %}
+{% set python_min = "3.10" %}
+{% set version = "2.7.0" %}
 
 package:
   name: esda
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/esda/esda-{{ version }}.tar.gz
-  sha256: 95a3732bf222f93509dff72300dd2ae5687ffefacd7862e56ab44a27297d5274
+  sha256: e3167aa1f010a377c5b4b457ea6f91d126816a1070fa48a4e048e9f8633082f5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
