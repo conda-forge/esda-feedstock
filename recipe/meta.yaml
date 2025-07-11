@@ -10,7 +10,7 @@ source:
   sha256: 0cd5e87ae1f3dfd5b284131fc8eb7595ff0fa03ee590ab9be4a1df86853ea36d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -22,13 +22,13 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - geopandas >=0.12
+    - geopandas >=0.14
     - libpysal >=4.12
-    - numpy >=1.24
-    - pandas >1.5
-    - scikit-learn >=1.2
-    - scipy >=1.9
-    - shapely >=2.0
+    - numpy >=1.26
+    - pandas >2.1
+    - scikit-learn >=1.4
+    - scipy >=1.12
+    - shapely >=2.1
 
 test:
   imports:
