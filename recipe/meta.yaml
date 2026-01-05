@@ -1,5 +1,5 @@
 {% set python_min = "3.11" %}
-{% set version = "2.8.0" %}
+{% set version = "2.8.1" %}
 
 package:
   name: esda
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/e/esda/esda-{{ version }}.tar.gz
-  sha256: e86da2985d75bff31f351749491373411dc87fd97549006111c105173d25425c
+  sha256: 26ae1bff2697a0ded41d9bb590664cb24047467457820b44f52a1ddec353292f
 
 build:
   number: 0
